@@ -7,19 +7,19 @@ import sys
 p = Path.cwd()
 
 
-def submit():
+def submit(): 
     response = entry.get()
-    with open("myFirstGuitext.txt", "a", encoding="UTF-8") as file_obj:
+    with open("myFirstGuitext.txt", "a", encoding="UTF-8") as file_obj: # Writes contents to a file, can be renamed to anything.
         file_obj.write(f"{response}\n")
-        
 
 
-def delete():
-    entry.delete(0, END)
+
+def delete(): # Deletes text from the text bar.
+    entry.delete(0, END) 
 
 
-def deleteCurrentTextContents():
-    with open("myFirstGuitext.txt", "w", encoding="UTF-8") as file_obj:
+def deleteCurrentTextContents(): # Will remove contents from the current file.
+    with open("myFirstGuitext.txt", "w", encoding="UTF-8") as file_obj: 
         file_obj.write("")
 
 
